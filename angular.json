@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ajedrez"
+    }
+  },
+  "defaultProject": "ajedrez",
+  "cli": {
+    "analytics": false
+  }
 }

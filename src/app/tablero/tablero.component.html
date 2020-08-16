@@ -1,0 +1,14 @@
+<div style="text-align:center">
+    <img class="img-responsive" src="assets/Piezas/PeonBlanco.png">
+    <table id="tabAje" width="40%"  style="margin: 0 auto;">
+        <tr *ngFor="let fila of filas">
+            <td *ngFor="let celda of fila" class={{celda}}></td>
+        </tr>
+    </table>
+    <input type="button" value="Click me">
+</div>
+<th class="jugador" width="50%" colspan="4">{{jugador1.nombre | uppercase}}</th>
+<th class="jugador" width="50%" colspan="4">{{jugador2.nombre | uppercase}}</th>
+
+    
+    
