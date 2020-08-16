@@ -48,8 +48,8 @@ export class TableroComponent implements OnInit {
   
 
   ngOnInit() {
-     // this.id1=this.route.snapshot.paramMap.get('nombre1')
-     // this.id2=this.route.snapshot.paramMap.get('nombre2')
+     this.id1=this.route.snapshot.paramMap.get('id1')
+     this.id2=this.route.snapshot.paramMap.get('id2')
      
 
   }

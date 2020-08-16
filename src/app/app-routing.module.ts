@@ -6,7 +6,7 @@ import { TableroComponent } from '../app/tablero/tablero.component';
 
 const routes: Routes = [
   {path: 'DashboardComponent',component: DashboardComponent},
-  {path: 'Tablero',component: TableroComponent},
+  {path: 'Tablero/:id1/:id2',component: TableroComponent},
 ];
 
 @NgModule({

@@ -1,8 +1,10 @@
 <h1>Registrar Juagdores</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  
-    <input  type="button" value= "Entrar al juego" routerLink="/Tablero" routerLinkActive="active">
+
+<nav> 
+<h4> Ingresar nombre Jugador1:  <input type="text" #tbName id="nom1" /></h4><br>
+<h4> Ingresar nombre Jugador2:  <input type="text" #tbName2 id="nom2" /></h4><br>
+  <button (click)="IrATablero(tbName.value,tbName2.value)">Ir a tablero </button>
 </nav>
+
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
