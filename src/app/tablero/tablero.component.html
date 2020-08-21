@@ -1,15 +1,21 @@
+
+
 <div style="text-align:center">
     <img class="img-responsive" src="assets/Piezas/PeonBlanco.png">
-    <table id="tabAje" width="40%"  style="margin: 0 auto;">
+    <h1>Jugador 1: {{jugador1.nombre}} </h1>
+    <h1>Jugador2:  {{jugador2.nombre}} </h1>
+    <table id="tabAje" width="50%"  style="margin: 0 auto;">
         <tr *ngFor="let fila of filas">
-            <td *ngFor="let celda of fila" class={{celda}}></td>
+            <td *ngFor="let celda of fila" class={{celda.clase}} id={{celda.id}}></td>
         </tr>
     </table>
-    <input type="button" value="Click me">
-    <h1>Jugador 1: {{id1}} </h1>
-    <h1>jugador2:  {{id2}} </h1>
+    <button (click)="inicializarTablero()">inicializar Tablero </button>
+
 </div>
-
-
+<div style="text-align:left">
+    <h4> Ingresar jugada:  <input type="text" #tbJug id="EspJug" /></h4><br>
+   <button (click)="RecibirJugada(tbJug.value)">Hacer movimiento </button>
+   
+</div>
     
     
